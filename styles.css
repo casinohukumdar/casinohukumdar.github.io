@@ -1,0 +1,23 @@
+/* Tüm cihazlarda varsayılan ayar */
+.gif-container {
+    display: flex;
+    justify-content: center; /* Ortalar */
+    align-items: center; /* Ortalar */
+    height: auto;
+    padding: 10px;
+}
+
+.responsive-gif {
+    width: 700px; /* Varsayılan genişlik */
+    height: 150px; /* Varsayılan yükseklik */
+    max-width: 100%; /* Maksimum genişlik ekranı aşamaz */
+    height: auto; /* Yükseklik otomatik ölçeklenir */
+}
+
+/* Mobil cihazlar için (ekran genişliği 768px'den küçükse) */
+@media (max-width: 768px) {
+    .responsive-gif {
+        width: 100%; /* Ekranın tamamını kaplar */
+        height: auto; /* Yüksekliği en-boy oranına göre ayarlanır */
+    }
+}
